@@ -2,11 +2,86 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-    <h1>Test</h1>
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <title>Дизаин студия из краснодара «Нёрд»</title>
+    </head>
+    <body>
 
-  </body>
+<!-- 1.!? СОЗДАЁМ ШАПКУ-->
+        <header class="main-header">
+            <nav class="main-navigation">
+    <!--1.1.! Добавим контейнер для логотипа. -->
+                <a class="main-header-logo">
+    <!--1.2.! Логотип НЁРД -->
+                    <img src="img/index-logo.svg" width="368" height="153" alt="Логотип дизаин студии из краснодара «Нёрд»">
+                </a>
+    <!--1.3.! Основное навигационное меню — неупорядоченный список, 
+                    каждый элемент которого содержит ссылку на страницу. -->
+                    <ul class="site-navigation">
+                        <li><a href="info.html">Студия</a></li>
+                        <li><a href="#clientele">Клиенты</li><!-- Переносит на место расположения Клиентов внизу страницы -->
+                        <li><a href="catalog.html">Магазин</a></li>
+                        <li><a href="#contacts">Контакты</a></li><!-- Переносит на место расположения Контактов внизу страницы -->
+                    </ul>
+    <!--1.4.! Создаём корзину -->
+                    <ul class="user-navigation">
+    <!--1.5.? При помощи CSS создадим иконку корзины -->
+                    <li class="login-link">Корзина</li>
+                </ul>
+            </nav>
+        </header>
+
+<!-- 2. ОСНОВНАЯ ЧАСТЬ САЙТА -->
+<!-- Долго.., слайдер, кнопка узнать больше -->
+        <main class="container">
+            <section class="atelier"><!--студия-->
+                <h1 class="visually-hidden">Долго, дорого, скрупулёзно.</h1>   
+                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>    
+                <!-- Кнопка "Узнать больше" -->
+                <span class="button-learn-more">Узнать больше</span>
+                <a href="slider.html">СЛАЙДЕР 3 ФОТО</a>
+            <section class="features">
+
+<!-- Вебсайты, приложения, презентации -->
+            <section class="works"><!-- Работы -->
+                <h2 class="visually-hidden">делаем ВЕБ-Сайты</h2>
+                <ul class="works-list">
+                    <li class="works-item">
+                        <img src="http://mysite.ru/images/image.jpg">
+                    <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a> 
+                    <h3>ВЕБ-САЙТЫ</h3>
+                    <p>Мир никогда не будет прежним<br>
+                        После того как увидет ваш сайт!</p>
+                    <span class="button-learn-more">ЗАКАЗАТЬ</span>
+                  </li>
+        </main>
+
+
+
+
+
+                
+<!-- 3.!? ФУТЕР -->
+        <footer class="main-footer">
+            <section class="contacts">
+    <!-- 3.1.? КАРТА С ПОКАЗАННЫМ МЕСТОМ ФИРМЫ, НЕПРАВИЛЬНО -->
+                <a class="button" href="map.html">Где фирма, вставить карту</a>
+    <!-- 3.2.! КОНТАКТЫ ВНИЗУ НАД КАРТОЙ -->
+                <h2><a name="contacts">NЁRDS DESIGN STUDIO</a></h2>
+                <p>
+                191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                тел: +7 (812) 275-75-75
+                </p>
+    <!-- 3.3.! НАПИШИТЕ НАМ -->
+                <span class="button-write-to-us" href="write-to-us.html">Напишите нам</a>
+            </section>
+    <!-- 3.4.! САМЫЙ НИЗ ФУТЕРА -->
+                <div class="footer-social">
+                    <a class="social-button" href="#">Вконтакте</a>
+                    <a class="social-button" href="#">Фейсбук</a>
+                    <a class="social-button" href="#">Инстаграм</a>
+                    <h2>Давайте дружить, это выгодно</h2>
+                    <b>Скидка 10% для друзей из социальных сетей.</b>
+                </div>        
+        </footer>  
+    </body>
 </html>

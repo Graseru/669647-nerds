@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Дизаин студия из краснодара «Нёрд»</title>
+    </head>
+    <body>
+
+<!-- 1.!? СОЗДАЁМ ШАПКУ-->
+        <header class="main-header">
+            <nav class="main-navigation">
+    <!--1.1.! Добавим контейнер для логотипа. -->
+                <a class="main-header-logo">
+    <!--1.2.! Логотип НЁРД -->
+                    <img src="img/index-logo.svg" width="368" height="153" 
+                    alt="Логотип дизаин студии из краснодара «Нёрд»">
+                </a>
+    <!--1.3.! Основное навигационное меню — неупорядоченный список, 
+                    каждый элемент которого содержит ссылку на страницу. -->
+                    <ul class="site-navigation">
+                        <li><a href="info.html">Студия</a></li>
+                        <li><a href="#clientele">Клиенты</li><!-- Переносит на место расположения Клиентов внизу страницы -->
+                        <li><a href="catalog.html">Магазин</a></li>
+                        <li><a href="#contacts">Контакты</a></li><!-- Переносит на место расположения Контактов внизу страницы -->
+                    </ul>
+    <!--1.4.! Создаём корзину -->
+                    <ul class="user-navigation">
+    <!--1.5.? При помощи CSS создадим иконку корзины -->
+                    <li class="login-link">Корзина</li>
+                </ul>
+            </nav>
+        </header>
+
+<!-- 2. ОСНОВНАЯ ЧАСТЬ САЙТА -->
+<!-- 2.1.? Долго.., слайдер, кнопка узнать больше -->
+        <main class="container">
+            <section class="atelier"><!--студия-->
+                <h1 class="atelier-long">Долго, дорого, <br>скрупулёзно.</h1>   
+                <p>Математически выверенный дизайн<br>
+                    для вашего сайта или мобильного приложения</p>    
+                <!-- Кнопка "Узнать больше" -->
+                <span class="button-learn-more">Узнать больше</span>
+                <a href="slider.html">СЛАЙДЕР 3 ФОТО</a>
+            </section>
+
+<!-- 2.2.? Вебсайты, приложения, презентации -->
+            <section class="works"><!-- Работы -->
+                <h2 class="visually-hidden">Делаем ВЕБ-Сайты(Скрыть)</h2>
+                <ul class="works-list">
+                <li class="works-item">
+                    <img src="фото">
+                    <h3>ВЕБ-САЙТЫ</h3>
+                    <p>Мир никогда не будет прежним
+                        <br> После того как увидет ваш сайт!</p>
+                    <span class="button-learn-more">ЗАКАЗАТЬ</span>
+                </li>
+
+                    <li class="works-item">
+                        <img src="фото">
+                        <h3>ПРИЛОЖЕНИЯ</h3>
+                        <p>Покорите топ-10 приложений в<br>
+                            AppStore и Google Play
+                        <span class="button-learn-more">ЗАКАЗАТЬ</span>
+                    </li>
+
+                    <li class="works-item">
+                        <img src="фото">
+                        <h3>ПРЕЗЕНТАЦИИ</h3>
+                        <p>Вы даже неподозреваете<br>
+                            насколько вы изумительны
+                        <span class="button-learn-more">ЗАКАЗАТЬ</span>
+                    </li>
+                </ul>    
+            </section>
+
+<!-- 2.3.? Мы - маленькая, но гордая дизаин-студия из Краснодара. -->
+            <section class="atelier"><!--студия-->
+                <h2 class="atelier-long">Мы - маленькая, но гордая<br>
+                     дизаин-студия из Краснодара.</h1>   
+                <p>Исповедуем принцыпы минимализма и чистоты. Ставим математический расчёт<br>
+                    превыше креатива. Работаем не покладая рук, как роботы.</p>  
+                <h3>Выполняем заказы на разработку:</h3>
+                <ul>
+                    <li>Веб-сайтов любой сложности</li>
+                    <li>Мобильных приложений для IOS и Android</li>
+                    <li>Слайдшоу и видео для корпаративных презентаций</li>
+                </ul>
+                <a class="main-header-logo">
+                <!-- Логотип НЁРД -->
+                <img src="img/index-logo.svg" width="368" height="153" 
+                alt="Логотип дизаин студии из краснодара «Нёрд»">
+                </a>
+                <h3>C 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЁМ:</h3>
+                <ul>
+                    <li>146%</li>
+                    <li>Уровень самоотдачи</li>
+                </ul>
+                <ul>
+                    <li>100%</li>
+                    <li>Соблюдение сроков</li>
+                </ul>
+                <ul>
+                    <li>50%</li>
+                    <li>Минимальная предоплата</li>
+                </ul>                
+            </section>
+<!-- 2.4.? ЗАКАЗЧИКИ -->
+            <section class="clientu">
+                <h2 class="visually-hidden"><a name="clientele">Клиенты</a></h2>
+                <ul class="clientele">
+                    <li><img src="img/index-logo.svg" width="368" height="153" alt="ХТМЛ АКАДЕМИЯ">
+                    <li><img src="img/index-logo.svg" width="368" height="153" alt="Логотип «Нёрд»">
+                    <li><img src="img/index-logo.svg" width="368" height="153" alt="ПИНК">
+                    <li><img src="img/index-logo.svg" width="368" height="153" alt="МИШКА">
+                </ul>
+        </main>
+                
+<!-- 3.!? ФУТЕР -->
+        <footer class="main-footer">
+            <section class="contacts">
+    <!-- 3.1.? КАРТА С ПОКАЗАННЫМ МЕСТОМ ФИРМЫ, НЕПРАВИЛЬНО -->
+                <a class="button" href="map.html">Где фирма, вставить карту</a>
+    <!-- 3.2.! КОНТАКТЫ ВНИЗУ НАД КАРТОЙ -->
+                <h2><a name="contacts">NЁRDS DESIGN STUDIO</a></h2>
+                <p>
+                191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                тел: +7 (812) 275-75-75
+                </p>
+    <!-- 3.3.! НАПИШИТЕ НАМ -->
+                <span class="button-write-to-us" href="write-to-us.html">Напишите нам</a>
+            </section>
+    <!-- 3.4.! САМЫЙ НИЗ ФУТЕРА -->
+                <div class="footer-social">
+                    <a class="social-button" href="#">Вконтакте</a>
+                    <a class="social-button" href="#">Фейсбук</a>
+                    <a class="social-button" href="#">Инстаграм</a>
+                    <h2>Давайте дружить, это выгодно</h2>
+                    <b>Скидка 10% для друзей из социальных сетей.</b>
+                </div>        
+        </footer>  
+    </body>
+</html>

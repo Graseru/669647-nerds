@@ -12,9 +12,9 @@
   <header class="main-header">
     <nav class="main-navigation">
       <!--1.1.! Добавим контейнер для логотипа. -->
-      <!--1.2.! Логотип НЁРД -->
-      <a class="main-header-nerds-logo" href="index.html">
-        <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип дизаин студии из краснодара «Нёрд»">
+      <a class="main-header-logo">
+        <!--1.2.! Логотип НЁРД -->
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизаин студии из краснодара «Нёрд»">
       </a>
       <!--1.3.! Основное навигационное меню — неупорядоченный список,
                 каждый элемент которого содержит ссылку на страницу. -->
@@ -25,10 +25,9 @@
         <li>
           <a href="#">Клиенты</a>
         </li>
-        <li class="site-navigation-current">
+        <li>
           <a href="catalog.html">Магазин</a>
         </li>
-        <!--отм. актив.катал.-->
         <li>
           <a href="#">Контакты</a>
         </li>
@@ -36,10 +35,8 @@
       <!--1.4.! Создаём корзину -->
       <ul class="user-navigation">
         <li>
-          <img src="img/cart-icon.svg" width="15" height="15" alt="фото-корзины">
+          <a href="#">Корзина</a>
         </li>
-        <!--1.5.? При помощи CSS создадим иконку корзины -->
-        <li class="#">Корзина</li>
       </ul>
     </nav>
   </header>
@@ -47,23 +44,22 @@
 
   <main class="main-catalog">
     <form action="http://echo.htmlacademy.ru" method="post">
-
       <!-- Сетка -->
       <h2>СЕТКА:</h2>
       <label>
         <input type="radio" name="grids" value="Адаптивная" checked>
-        <p>Адаптивная</p>
+        Адаптивная
         <br>
       </label>
       <label>
         <input type="radio" name="grids" value="Фиксированная">
-        <p>Фиксированная</p>
+        Фиксированная
         <br>
       </label>
       <br>
       <label>
         <input type="radio" name="grids" value="Резиновая">
-        <p>Резиновая</p>
+        Резиновая
         <br>
       </label>
 
@@ -86,6 +82,7 @@
       <br>
       <input type="submit" value="Отправить">
     </form>
+
     <!-- Коталог шаблонов -->
     <div>
       <section class="catalog">
@@ -112,9 +109,21 @@
         </uL>
       </section>
 
+      <!-- Наименование, описание, цена - кнопку заказа -->
+      <section>
+        <h1>SEDONA</h1>
+        <form action="#" method="post">
+          <p>Информационый сайт
+            <br> для туристов</p>
+          <br>
+          <input type="submit" value="9900 РУБ.">
+        </form>
+
+      </section>
+
+      <!-- Номерация страниц -->
       <section>
         <h2 class="visually-hidden">Страницы</h2>
-        <!-- Номерация страниц -->
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current">
             <a>1</a>
@@ -130,13 +139,30 @@
           </li>
         </ul>
       </section>
+      <!-- Форма обратноой связи -->
+      <section>
+        <h1>Напишите нам</h1>
+        <form action="#" method="post">
+          <lable for="login-field">Ваше имя:</lable>
+          <input id="login-field" type="text" name="login" placeholder="Имя Фамилия" required><br>
+
+          <lable for="email-field">Ваш e-mail:</lable>
+          <input id="email-field" type="text" name="email" placeholder="email@exemple.com" required><br>
+          <p>Текст письма:</p>
+          <textarea id="comment-field" name="comment" rows="4" required></textarea>
+          <input type="submit" value="ОТПРАВИТЬ">
+        </form>
+      </section>
     </div>
 
   </main>
 
   <!-- 3.!? ФУТЕР -->
   <footer class="main-footer">
+
+
     <section class="contacts">
+
       <!-- 3.1.? Адрес фирмы -->
       <a class="button" href="#">
         <img src="img/map-and-marker.jpg" width="1440" height="808" alt="Адрес фирмы">
